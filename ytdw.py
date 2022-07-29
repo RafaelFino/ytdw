@@ -30,11 +30,11 @@ def LogOk(message):
 
 try:
 
-    parser = argparse.ArgumentParser(description='Youtube video information')
-    parser.add_argument('--url', dest='link', type=str, help='Youtube video URL', required=True)
-    parser.add_argument('--high-res', dest='highRes', type=str, help='Get video data with maxmium resolution available', default='True', required=False)
-    parser.add_argument('--path', dest='path', type=str, help='Output path to store downloaded file', default='output', required=False)
-    parser.add_argument('--filename', dest='filename', type=str, help='Output filename to create video file', default=f"video_{datetime.datetime.now()}", required=False)
+    parser = argparse.ArgumentParser(description='Youtube video downloader information')
+    parser.add_argument('--url', dest='link', type=str, help='youtube video URL', required=True)
+    parser.add_argument('--high-res', dest='highRes', type=str, help='get video data with maxmium resolution available', default='True', required=False)
+    parser.add_argument('--path', dest='path', type=str, help='output path to store downloaded file', default='output', required=False)
+    parser.add_argument('--filename', dest='filename', type=str, help='output filename to create video file', default=f"video_{datetime.datetime.now()}", required=False)
     
     args = parser.parse_args()
        
